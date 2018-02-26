@@ -27,10 +27,10 @@ giris_yap = browser.find_element_by_xpath("//*[@id='react-root']/section/main/ar
 giris_yap.click()
 time.sleep(2)
 
-username = browser.find_element_by_name(kadi)
-password = browser.find_element_by_name(passw)
-username.send_keys("kullanıcı adınız")
-password.send_keys("şifreniz")
+username = browser.find_element_by_name("username")
+password = browser.find_element_by_name("password")
+username.send_keys(kadi)
+password.send_keys(passw)
 
 sisteme_gir = browser.find_element_by_xpath("//*[@id='react-root']/section/main/article/div[2]/div[1]/div/form/span/button")
 sisteme_gir.click()
